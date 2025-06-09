@@ -1,0 +1,4 @@
+@theme {
+	--color-primary: var(--color-teal-500);
+	--color-secondary: var(--color-slate-400);
+}

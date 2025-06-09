@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@import "./colors.css";
+
+* {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+	display: none;
+}
+
+*::selection {
+	@apply bg-primary text-white;
+}
+
+body {
+	font-family: var(--font-geist-sans);
+	@apply text-sm leading-relaxed;
+	@apply bg-neutral-950;
+}
+
+h1,
+.h1 {
+	font-family: var(--font-unbounded);
+	@apply font-extrabold text-white text-2xl uppercase;
+}
+
+p {
+	@apply font-mono text-neutral-300 leading-relaxed;
+}
+
+nav a {
+	@apply font-mono text-white;
+}
+
+@utility content-width {
+	@apply w-[840px] max-w-[80vw];
+}

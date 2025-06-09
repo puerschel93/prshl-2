@@ -1,14 +1,14 @@
 import { Main } from "@/components/main";
-import { Race } from "@/components/race";
+import { Races } from "@/components/races";
 import React from "react";
 
 export default function Home() {
-  /** Render */
-  return (
-    <React.Fragment>
-      <Main />
-      <Race index={0} distance={10_000} />
-      <Race index={1} distance={42_195} />
-    </React.Fragment>
-  );
+	/** Render */
+	return (
+		<React.Fragment>
+			<Main />
+			<Races />
+			<div className="border-white border-t w-screen h-screen" />
+		</React.Fragment>
+	);
 }
